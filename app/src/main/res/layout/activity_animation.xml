@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnimationActivity">
+
+
+    <TextView
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="390dp"
+        android:fontFamily="@font/qucisand"
+        android:text="Loading"
+        android:textSize="35dp">
+
+
+    </TextView>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        style="@style/SpinKitView.Large.Wave"
+        android:layout_width="131dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/loading"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="-58dp"
+        app:SpinKit_Color="@color/colorAccent" />
+
+</RelativeLayout>

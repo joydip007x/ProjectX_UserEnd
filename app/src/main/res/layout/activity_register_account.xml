@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="100dp"
+    android:background="@color/colorAccent"
+    tools:context=".RegisterAccount">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/random1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/White"
+        app:boxStrokeWidth="2dp"
+        android:textColorHint="@color/White"
+        app:hintTextColor="@color/White"
+        android:defaultFocusHighlightEnabled="true"
+        android:hint="UserEmail"
+        android:paddingLeft="50dp"
+
+        android:paddingRight="50dp"
+        app:errorEnabled="true"
+        app:startIconDrawable="@drawable/ic_baseline_account_circle_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ra_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/White"
+        app:hintTextColor="@color/White"
+        android:layout_alignTop="@+id/random1"
+        android:layout_marginTop="67dp"
+        android:hint="Password"
+        app:boxStrokeColor="@color/White"
+        app:boxStrokeWidth="2dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        app:endIconMode="password_toggle"
+        app:helperTextEnabled="true"
+        app:startIconDrawable="@drawable/ic_baseline_fingerprint_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ra_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/White"
+        app:hintTextColor="@color/White"
+        android:layout_alignTop="@+id/random1"
+        app:boxStrokeColor="@color/White"
+        app:boxStrokeWidth="2dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="141dp"
+        android:layout_marginEnd="0dp"
+        android:hint="Phone"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        app:endIconMode="clear_text"
+        app:helperTextEnabled="true"
+        app:startIconDrawable="@drawable/ic_baseline_call_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ra_phonereg"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/ra_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/random1"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/White"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_marginTop="199dp"
+        android:layout_marginEnd="162dp"
+        android:text="Submit" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="74dp"
+        android:layout_height="44dp"
+        android:indeterminateTint="@color/Black"
+        android:layout_below="@+id/random1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="147dp"
+        android:layout_marginEnd="170dp" />
+
+</RelativeLayout>

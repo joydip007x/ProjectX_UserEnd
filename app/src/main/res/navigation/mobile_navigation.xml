@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_order">
+
+
+
+    <fragment
+        android:id="@+id/nav_order"
+        android:name="com.example.projectxue.ui.order.OrderFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_order" />
+
+    <fragment
+        android:id="@+id/nav_past_order"
+        android:name="com.example.projectxue.ui.past_order.PastOrderFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_past_order" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.projectxue.ui.profile.Profile"
+        android:label="Profile "
+        tools:layout="@layout/fragment_profile" />
+
+
+
+</navigation>
